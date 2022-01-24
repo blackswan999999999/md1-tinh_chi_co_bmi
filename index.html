@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số BMI</title>
+</head>
+<body>
+
+</body>
+<script>
+    let x = parseFloat(prompt('Hãy nhập chiều cao của bạn(đơn vị là m): '))
+    let y = parseFloat(prompt('hãy nhập cân nặng của bạn: '))
+    bmi = y / (x * x)
+    console.log('giá trị của bmi:',bmi)
+    if (bmi < 16) {
+        alert('Gầy độ III')
+    } else if (bmi < 17 && bmi >= 16) {
+        alert('Gầy độ II')
+    }else if (bmi < 18 && bmi >= 17){
+        alert('Gầy độ I')
+    }else if (bmi < 25 && bmi >= 18.5){
+        alert('Bình thường')
+    } else if(bmi < 30 && bmi >= 25){
+        alert('Thừa cân')
+    } else  if (bmi < 35 && bmi >= 30){
+        alert('Béo phì độ I')
+    } else if(bmi < 40 && bmi >= 35){
+        alert('Béo phì độ II')
+    } else if( 40<bmi ){
+        alert('Béo phì độ III')
+    }
+</script>
+</html>
